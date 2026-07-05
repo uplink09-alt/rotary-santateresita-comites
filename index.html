@@ -26,7 +26,7 @@
   }
 
   .header{
-    max-width: 640px;
+    max-width: 900px;
     margin: 0 auto 24px;
     text-align: center;
   }
@@ -67,11 +67,18 @@
   /* ---------- Vista mosaico ---------- */
 
   .mosaico{
-    max-width: 640px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+  }
+
+  @media (min-width: 700px){
+    .mosaico{
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
   }
 
   .baldosa{
@@ -129,7 +136,7 @@
   /* ---------- Vista detalle ---------- */
 
   .detalle-pantalla{
-    max-width: 640px;
+    max-width: 900px;
     margin: 0 auto;
     display: none;
   }
@@ -241,7 +248,7 @@
   /* ---------- Pie de página ---------- */
 
   .pie{
-    max-width: 640px;
+    max-width: 900px;
     margin: 36px auto 0;
     padding-top: 24px;
     border-top: 1px solid var(--borde);
